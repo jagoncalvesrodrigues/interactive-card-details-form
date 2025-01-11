@@ -3,7 +3,7 @@
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Space Grotesk", serif;
 }
 img{
     display: block;
@@ -18,4 +18,142 @@ ul{
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    
+    @media screen and (width>=768px) {
+        flex-direction: row;
+        gap: 349px;
+        align-items: center;
+    }
+}
+.payment-form {
+    background: #fff;
+    padding: 20px;
+
+    @media screen and (width>=768px) {
+        width: 381px;
+    }
+}
+
+.payment-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.payment-form input::placeholder {
+    color: #bbb;
+}
+
+.payment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #21092F;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.payment-form button:hover {
+    background-color: #21092F;
+}
+
+.dataCvc{
+    display: flex; 
+    gap: 10px;
+    width: 100%;
+}
+.cvc{
+    width: 100%;
+}
+
+.card-container{
+    width: 100%;
+    height: 240px;
+    background-image: url('../images/bg-main-mobile.png');
+    background-size: cover;
+    
+    @media screen and (width>=768px) {
+        width: 483px;
+        height: 100vh;
+        background-image: url('../images/bg-main-desktop.png');
+    }
+}
+.cards{
+    width: 100%;
+    padding: 32px 16px;
+    position: absolute;
+    display: flex;
+    color: white;
+
+    @media screen and (width>=768px) {
+        width: 541px;
+        height: 527px;
+        margin-top:calc(50% - 527px);
+        left: 164px;
+    }
+}
+.cardback{
+    background-image: url('../images/bg-card-back.png');
+    right: 16px;
+    padding-right: 37px;
+    align-items: center;
+    justify-content: end;
+
+    @media screen and (width>=768px) {
+        bottom: 0;
+        padding-right: 57px;
+    }
+}
+.cardfront{
+    background-image: url('../images/bg-card-front.png');
+    top: 120px;
+    justify-content: space-between;
+    align-items:end;
+    padding: 20px;
+    flex-direction: column;
+    @media screen and (width>=768px) {
+        top: 0;
+        justify-content: end;
+    }
+}
+.cardback,.cardfront{
+    background-size:cover;
+    width: 286px;
+    height: 157px;
+    position: absolute;
+    display: flex;
+    @media screen and (width>=768px) {
+        width: 447px;
+        height: 245px;
+    }
+}
+.namedate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.numberscard{
+    font-size: 28px;
+    letter-spacing: 4px;
+    align-self: center;
+    margin: 0;
 }

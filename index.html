@@ -2,11 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <main class="main">
+        <div class="card-container">
+            <div class="cards">
+                <div class="cardback">
+                    <p class="cvcNumba">000</p>
+                </div>
+        
+                <div class="cardfront">
+                    <p class="numberscard">0000 0000 0000 0000</p>
+                    <div class="namedate">
+                        <p class="name">Jane Appleseed</p>
+                        <p class="expiry">00/00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="payment-form">
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text"  placeholder="">
     
+            <label for="card-number">Card Number</label>
+            <input type="text"  placeholder="e.g. 1234 5678 9123 0000">
+    
+            <div class="dataCvc">
+                <div class="">
+                    <label for="exp-date">Exp. Date (MM/YY)</label>
+                    <input type="text"  placeholder="MM">
+                </div>
+                <div >
+                    <label for="exp-year" class="visibility: hidden;">Year</label>
+                    <input type="text"  placeholder="YY">
+                </div>
+                <div >
+                    <label class="cvc">CVC</label>
+                    <input type="text" placeholder="e.g. 123">
+                </div>
+            </div>
+    
+            <button>Confirm</button>
+        </form>
+
+    </main>
 </body>
 </html>
