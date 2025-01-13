@@ -152,8 +152,15 @@ ul{
     justify-content: space-between;
 }
 .numberscard{
-    font-size: 28px;
-    letter-spacing: 4px;
-    align-self: center;
-    margin: 0;
+    
+    display: none;
+    
+    
+    @media screen and (width>=768px) {
+        display: block;
+        font-size: 28px;
+        letter-spacing: 4px;
+        align-self: center;
+        margin: 0;
+    }
 }
